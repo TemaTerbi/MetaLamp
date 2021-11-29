@@ -1,6 +1,14 @@
 /*!**************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/sass/style.sass ***!
   \**************************************************************************************************************/
+@font-face {
+  font-family: MainBold, sans-serif;
+  src: url(11f6d2c2d19e49669c46.ttf);
+}
+@font-face {
+  font-family: MainRegular, sans-serif;
+  src: url(39455781b9a3c3718cc7.ttf);
+}
 body {
-  background-color: red;
+  background-color: #1F204180;
 }
