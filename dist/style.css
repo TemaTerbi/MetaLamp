@@ -2,13 +2,49 @@
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/sass/style.sass ***!
   \**************************************************************************************************************/
 @font-face {
-  font-family: MainBold, sans-serif;
-  src: url(11f6d2c2d19e49669c46.ttf);
+  font-family: "MainBold", sans-serif;
+  src: url(0b9591de819f7f25ea47.woff);
+  src: url(8b1d347f1586b9a7b359.woff2);
 }
 @font-face {
-  font-family: MainRegular, sans-serif;
-  src: url(39455781b9a3c3718cc7.ttf);
+  font-family: "MainRegular", sans-serif;
+  src: url(775d58aaebdeccabfc9d.woff);
+  src: url(6dbd7bc7a22c7426b009.woff2);
 }
-body {
-  background-color: #1F204180;
+input::placeholder {
+  font-size: 14px;
+  font-family: MainRegular, sans-serif;
+}
+
+.textfield {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  height: 67px;
+}
+.textfield-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.textfield-header__text {
+  font-family: "MainBold", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 15px;
+  font-size: 12px;
+  color: #1F2041;
+}
+.textfield-input {
+  display: flex;
+}
+.textfield-input__input {
+  width: 320px;
+  height: 44px;
+  padding-left: 15px;
+  font-size: 14px;
+  font-family: MainRegular, sans-serif;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+  outline: none;
 }
