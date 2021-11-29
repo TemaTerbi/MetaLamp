@@ -37,5 +37,8 @@
     "webpack": "^5.64.4",
     "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.6.0"
+  },
+  "dependencies": {
+    "webpack-stringify-loader": "^1.0.0"
   }
 }

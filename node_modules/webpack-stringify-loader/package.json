@@ -1,0 +1,26 @@
+{
+  "name": "webpack-stringify-loader",
+  "version": "1.0.0",
+  "description": "JSON.stringify through a Webpack loader.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/s12chung/webpack-stringify-loader.git"
+  },
+  "keywords": [
+    "webpack",
+    "loader",
+    "stringify",
+    "json",
+    "eval"
+  ],
+  "author": "Steven Chung",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/s12chung/webpack-stringify-loader/issues"
+  },
+  "homepage": "https://github.com/s12chung/webpack-stringify-loader#readme"
+}
