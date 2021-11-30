@@ -1,0 +1,57 @@
+mixin dropdown(name='Dropdownn', selected='Сколько гостей')
+    .dropdown
+        .dropdown-header 
+            .dropdown-header__text=name
+        .dropdown-drop
+            .dropdown-drop__main=main 
+            .dropdown-drop__icon(onclick="open()")
+                .dropdown-drop__selected=selected
+                img(src="/src/images/expandmore.svg", alt="Drop")
+    .list 
+        +ddr 
+    script 
+        include ../../js/add.js
+        include ../../js/open.js
+    
+
+
+
+
+mixin ddr(item1='спальни', item2='кровати', item3='ванные комнаты', i=0, a=0)
+    .ddr(id="drop")
+        .ddr-item 
+            .ddr-item__text=item1
+            .ddr-item__score 
+                +minus('-')
+                .ddr-item__scoretxt(id="val")=i
+                +plus('+')
+        .ddr-item 
+            .ddr-item__text=item2
+            .ddr-item__score 
+                +minus('-')
+                .ddr-item__scoretxt=i
+                +plus('+')
+        .ddr-item 
+            .ddr-item__text=item3
+            .ddr-item__score 
+                +minus('-')
+                .ddr-item__scoretxt=i
+                +plus('+')
+    
+          
+
+
+
+
+mixin plus(val='+')
+    .circle(onclick="add()")
+        .circle-text=val
+
+
+mixin minus(val='+')
+    .circle(onclick="resetCounter()")
+        .circle-text=val
+
+
+
+                    

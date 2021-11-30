@@ -35,7 +35,7 @@ module.exports = {
     },
     {
       test: /\.css$/i,
-      use: [MiniCssExtractPlugin.loader, "css-loader"],
+      use: [MiniCssExtractPlugin.loader, "css-loader", "file-loader"],
     },
     {
       test: /\.s[ac]ss$/i,
@@ -53,16 +53,27 @@ module.exports = {
           options: {
             name: '[name].[ext]',
             publicPath: '../fonts',
-            outputPath: '/fonts'
           }
         }
         
       ]
     },
+    // {
+    //   test: /\.(png|svg|jpg|jpeg|gif)$/i,
+    //   type: 'asset/resource'
+    // },
     {
-      test: /\.(png|svg|jpg|jpeg|gif)$/i,
-      type: 'asset/resource'
+      test:/\.(jpg|png|svg)$/,
+      loader: 'file-loader',
+      options:{
+        name: '/img/[sha512:hash:base64:7].[ext]',
+        outputPath :  '/images/',
+      }
     },
+    {
+      test: /\.html$/i,
+      loader: 'html-loader'
+    }
   ],
   },
 }

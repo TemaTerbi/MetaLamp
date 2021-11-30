@@ -1,1 +1,20 @@
-<!DOCTYPE html><html><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="style.css"><title>TEST</title><script defer src="main.js"></script><link href="style.css" rel="stylesheet"></head><body><div class="textfield"><div class="textfield-header"> <div class="textfield-header__text">Text Field</div></div><div class="textfield-input"> <input class="textfield-input__input" placeholder="Email"></div></div><script src="/dist/main.js"></script></body></html>
+<!DOCTYPE html><html><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="style.css"><title>TEST</title><script defer src="main.js"></script><link href="style.css" rel="stylesheet"></head><body><div class="dropdown"><div class="dropdown-header"> <div class="dropdown-header__text">Dropdownn</div></div><div class="dropdown-drop"><div class="dropdown-drop__main"></div><div class="dropdown-drop__icon" onclick="open()"><div class="dropdown-drop__selected">Сколько гостей</div><img src="/src/images/expandmore.svg" alt="Drop"></div></div></div><div class="list"> <div class="ddr" id="drop"><div class="ddr-item"> <div class="ddr-item__text">спальни</div><div class="ddr-item__score"> <div class="circle" onclick="resetCounter()"><div class="circle-text">-</div></div><div class="ddr-item__scoretxt" id="val">0</div><div class="circle" onclick="add()"><div class="circle-text">+</div></div></div></div><div class="ddr-item"> <div class="ddr-item__text">кровати</div><div class="ddr-item__score"> <div class="circle" onclick="resetCounter()"><div class="circle-text">-</div></div><div class="ddr-item__scoretxt">0</div><div class="circle" onclick="add()"><div class="circle-text">+</div></div></div></div><div class="ddr-item"> <div class="ddr-item__text">ванные комнаты</div><div class="ddr-item__score"> <div class="circle" onclick="resetCounter()"><div class="circle-text">-</div></div><div class="ddr-item__scoretxt">0</div><div class="circle" onclick="add()"><div class="circle-text">+</div></div></div></div></div></div><script> var val = 0; 
+
+
+function add() {
+    updateDisplay(++val);
+}
+
+function resetCounter() {
+    updateDisplay(--val);
+}
+
+function updateDisplay(val) {
+    document.getElementById("val").innerHTML = val;
+}
+
+
+    
+function open() {
+    document.getElementById("drop").classList.add("vis")
+}</script><script src="/dist/main.js"></script></body></html>
