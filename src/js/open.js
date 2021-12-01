@@ -1,3 +1,4 @@
-function open() {
-    document.getElementById("drop").classList.add("vis")
+function drop() {
+   document.getElementById('dropmenu').classList.toggle('vis');
+   document.getElementById('border').classList.toggle('border');
 }

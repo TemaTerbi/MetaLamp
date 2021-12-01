@@ -2,9 +2,9 @@ mixin dropdown(name='Dropdownn', selected='Сколько гостей')
     .dropdown
         .dropdown-header 
             .dropdown-header__text=name
-        .dropdown-drop
+        .dropdown-drop(onclick="drop()" id="border")
             .dropdown-drop__main=main 
-            .dropdown-drop__icon(onclick="open()")
+            .dropdown-drop__icon
                 .dropdown-drop__selected=selected
                 img(src="/src/images/expandmore.svg", alt="Drop")
     .list 
@@ -18,7 +18,7 @@ mixin dropdown(name='Dropdownn', selected='Сколько гостей')
 
 
 mixin ddr(item1='спальни', item2='кровати', item3='ванные комнаты', i=0, a=0)
-    .ddr(id="drop")
+    .ddr(id='dropmenu')
         .ddr-item 
             .ddr-item__text=item1
             .ddr-item__score 
@@ -29,13 +29,13 @@ mixin ddr(item1='спальни', item2='кровати', item3='ванные к
             .ddr-item__text=item2
             .ddr-item__score 
                 +minus('-')
-                .ddr-item__scoretxt=i
+                .ddr-item__scoretxt(id="lol")=i
                 +plus('+')
         .ddr-item 
             .ddr-item__text=item3
             .ddr-item__score 
                 +minus('-')
-                .ddr-item__scoretxt=i
+                .ddr-item__scoretxt(id="val")=i
                 +plus('+')
     
           
@@ -44,12 +44,13 @@ mixin ddr(item1='спальни', item2='кровати', item3='ванные к
 
 
 mixin plus(val='+')
-    .circle(onclick="add()")
+    .circle(onclick="add(this)")
         .circle-text=val
+        
 
 
 mixin minus(val='+')
-    .circle(onclick="resetCounter()")
+    .circle(onclick="dec(this)")
         .circle-text=val
 
 

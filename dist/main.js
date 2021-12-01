@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_
   \***********************/
 /***/ (() => {
 
-eval("var val = 0;\n\nfunction add() {\n  updateDisplay(++val);\n}\n\nfunction resetCounter() {\n  updateDisplay(--val);\n}\n\nfunction updateDisplay(val) {\n  document.getElementById(\"val\").innerHTML = val;\n}\n\n//# sourceURL=webpack://metalamp/./src/js/add.js?");
+eval("var add = function add(e) {\n  var element = e.parentNode.children[1];\n  element.innerText = +element.innerText + 1;\n};\n\nvar dec = function dec(e) {\n  var element = e.parentNode.children[1];\n  element.innerText = +element.innerText - 1;\n  element.innerText = element.innerText <= 0 ? 0 : element.innerText = +element.innerText - 1;\n};\n\n//# sourceURL=webpack://metalamp/./src/js/add.js?");
 
 /***/ }),
 
@@ -36,7 +36,7 @@ eval("var val = 0;\n\nfunction add() {\n  updateDisplay(++val);\n}\n\nfunction r
   \************************/
 /***/ (() => {
 
-eval("function open() {\n  document.getElementById(\"drop\").classList.add(\"vis\");\n}\n\n//# sourceURL=webpack://metalamp/./src/js/open.js?");
+eval("function drop() {\n  document.getElementById('dropmenu').classList.toggle('vis');\n  document.getElementById('border').classList.toggle('border');\n}\n\n//# sourceURL=webpack://metalamp/./src/js/open.js?");
 
 /***/ }),
 

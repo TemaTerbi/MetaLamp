@@ -1,17 +1,14 @@
-var val = 0; 
-
-
-function add() {
-    updateDisplay(++val);
+    const add = (e) => {
+    const element = e.parentNode.children[1];
+    element.innerText = +element.innerText +1
 }
 
-function resetCounter() {
-    updateDisplay(--val);
+const dec = (e) => {
+    const element = e.parentNode.children[1];
+    element.innerText = +element.innerText -1
+    element.innerText = element.innerText <= 0 ? 0 : element.innerText = +element.innerText -1
 }
 
-function updateDisplay(val) {
-    document.getElementById("val").innerHTML = val;
-}
 
 
     
