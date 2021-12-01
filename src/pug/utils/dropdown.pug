@@ -10,7 +10,7 @@ mixin dropdown(name='Dropdownn', selected='Сколько гостей')
     .list 
         +ddr 
     script 
-        include ../../js/add.js
+        include ../../js/dropdownfunction.js
         include ../../js/open.js
     
 
@@ -23,20 +23,25 @@ mixin ddr(item1='спальни', item2='кровати', item3='ванные к
             .ddr-item__text=item1
             .ddr-item__score 
                 +minus('-')
-                .ddr-item__scoretxt(id="val")=i
+                .ddr-item__scoretxt(id="test")=i
                 +plus('+')
         .ddr-item 
             .ddr-item__text=item2
             .ddr-item__score 
-                +minus('-')
-                .ddr-item__scoretxt(id="lol")=i
+                +minus('-')(id="minus")
+                .ddr-item__scoretxt=i
                 +plus('+')
         .ddr-item 
             .ddr-item__text=item3
             .ddr-item__score 
                 +minus('-')
-                .ddr-item__scoretxt(id="val")=i
+                .ddr-item__scoretxt=i
                 +plus('+')
+        .ddr-config
+            .ddr-config__clear(id="clear" onclick="clear()") Очистить
+            .ddr-config__sub Применить
+
+                
     
           
 
@@ -49,9 +54,10 @@ mixin plus(val='+')
         
 
 
-mixin minus(val='+')
-    .circle(onclick="dec(this)")
-        .circle-text=val
+mixin minus(val='-')
+    .circlemin(onclick="dec(this)", id="minus")
+        .circlemin-text=val
+
 
 
 

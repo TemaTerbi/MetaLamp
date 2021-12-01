@@ -59,6 +59,21 @@
             font-size: 12px
             font-family: MainBold, sans-serif
             color: $darkShade100
+    &-config
+        display: flex
+        justify-content: space-between
+        padding: 7px 7px 13px 15px
+        font-family: MainBold, sans-serif
+        font-weight: bold
+        text-transform: uppercase
+        font-size: 12px
+        color: $purple
+        &__sub
+            cursor: pointer
+        &__clear
+            cursor: pointer
+            visibility: hidden
+            opacity: 0
 
 .circle
     width: 30px
@@ -74,9 +89,27 @@
         color: $darkShade50
         font-family: MainRegular, sans-serif
 
+.circlemin
+    width: 30px
+    height: 30px
+    border-radius: 90%
+    border: 1px solid rgba(31, 32, 65, 0.25)
+    display: flex
+    align-items: center
+    justify-content: center
+    cursor: pointer
+    opacity: 0.5
+    &-text
+        font-size: 18px
+        color: $darkShade50
+        font-family: MainRegular, sans-serif
+
 .vis
     opacity: 1
     visibility: visible
+
+.opacity
+    opacity: 1
 
 .border
     border-bottom-left-radius: 0px
