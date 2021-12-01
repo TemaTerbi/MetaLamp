@@ -16,7 +16,17 @@
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_sum__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./js/sum */ \"./src/js/sum.js\");\n/* harmony import */ var _js_sum__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_js_sum__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _sass_style_sass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./sass/style.sass */ \"./src/sass/style.sass\");\n/* harmony import */ var _js_dropdownfunction__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/dropdownfunction */ \"./src/js/dropdownfunction.js\");\n/* harmony import */ var _js_dropdownfunction__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_js_dropdownfunction__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _js_open__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/open */ \"./src/js/open.js\");\n/* harmony import */ var _js_open__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_js_open__WEBPACK_IMPORTED_MODULE_3__);\n\n\n\n\n\nvar image = __webpack_require__(/*! ./images/expandmore.svg */ \"./src/images/expandmore.svg\");\n\n//# sourceURL=webpack://metalamp/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_sum__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./js/sum */ \"./src/js/sum.js\");\n/* harmony import */ var _js_sum__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_js_sum__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _sass_style_sass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./sass/style.sass */ \"./src/sass/style.sass\");\n/* harmony import */ var _js_dropdownfunction__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/dropdownfunction */ \"./src/js/dropdownfunction.js\");\n/* harmony import */ var _js_dropdownfunction__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_js_dropdownfunction__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _js_open__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/open */ \"./src/js/open.js\");\n/* harmony import */ var _js_open__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_js_open__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _js_checkbox__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./js/checkbox */ \"./src/js/checkbox.js\");\n/* harmony import */ var _js_checkbox__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_js_checkbox__WEBPACK_IMPORTED_MODULE_4__);\n\n\n\n\n\n\nvar image = __webpack_require__(/*! ./images/expandmore.svg */ \"./src/images/expandmore.svg\");\n\n//# sourceURL=webpack://metalamp/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/js/checkbox.js":
+/*!****************************!*\
+  !*** ./src/js/checkbox.js ***!
+  \****************************/
+/***/ (() => {
+
+eval("function openn() {\n  document.getElementById('list').classList.toggle('visible');\n}\n\n//# sourceURL=webpack://metalamp/./src/js/checkbox.js?");
 
 /***/ }),
 
@@ -26,7 +36,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_
   \************************************/
 /***/ (() => {
 
-eval("var add = function add(e) {\n  var element = e.parentNode.children[1];\n  element.innerText = +element.innerText + 1;\n\n  if (element.innerText > 0) {\n    document.getElementById('clear').classList.add('vis');\n    document.getElementById('minus').classList.add('opacity');\n  }\n};\n\nvar dec = function dec(e) {\n  var element = e.parentNode.children[1];\n  element.innerText = +element.innerText - 1;\n  element.innerText = element.innerText <= 0 ? 0 : element.innerText = +element.innerText - 1;\n\n  if (element.innerText <= 0) {\n    document.getElementById('clear').classList.remove('vis');\n    document.getElementById('minus').classList.remove('opacity');\n  }\n};\n\nfunction clear() {\n  document.getElementById('test').innerText = 0;\n}\n\n//# sourceURL=webpack://metalamp/./src/js/dropdownfunction.js?");
+eval("var add = function add(e) {\n  var element = e.parentNode.children[1];\n  element.innerText = +element.innerText + 1;\n\n  if (element.innerText > 0) {\n    document.getElementById('clear').classList.add('vis');\n    document.getElementById('minus').classList.add('opacity');\n  }\n};\n\nvar dec = function dec(e) {\n  var element = e.parentNode.children[1];\n  element.innerText = +element.innerText - 1;\n  element.innerText = element.innerText <= 0 ? 0 : element.innerText = +element.innerText - 1;\n\n  if (element.innerText <= 0) {\n    document.getElementById('clear').classList.remove('vis');\n    document.getElementById('minus').classList.remove('opacity');\n  }\n};\n\nfunction clear() {\n  i = 0;\n}\n\n//# sourceURL=webpack://metalamp/./src/js/dropdownfunction.js?");
 
 /***/ }),
 
@@ -36,7 +46,7 @@ eval("var add = function add(e) {\n  var element = e.parentNode.children[1];\n  
   \************************/
 /***/ (() => {
 
-eval("function drop() {\n  document.getElementById('dropmenu').classList.toggle('vis');\n  document.getElementById('border').classList.toggle('border');\n}\n\n//# sourceURL=webpack://metalamp/./src/js/open.js?");
+eval("function drop() {\n  document.getElementById('dropmenu').classList.toggle('vis');\n  document.getElementById('border').classList.toggle('border');\n}\n\nfunction peopleopen() {\n  document.getElementById('dropmenupeople').classList.toggle('vis');\n  document.getElementById('borderpeople').classList.toggle('border');\n}\n\n//# sourceURL=webpack://metalamp/./src/js/open.js?");
 
 /***/ }),
 

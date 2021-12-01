@@ -1,0 +1,58 @@
+.checkbox 
+    width: 266px
+    height: 44px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &-text
+        font-family: MainBold, sans-serif
+        font-weight: bold
+        font-size: 12px
+        text-transform: uppercase
+        color: $darkShade100
+    &-icon
+        cursor: pointer
+
+.chlist
+    width: 266px
+    display: flex
+    flex-direction: column
+    margin-top: 5px
+    visibility: hidden
+    opacity: 0
+    transition: 0.2s
+    &-item
+        display: flex
+        &__name
+            font-family: MainRegular,sans-serif
+            font-size: 14px
+            color: $darkShade50
+            margin-left: 9.74px
+            margin-bottom: 13px
+        &__check
+            position: absolute
+            z-index: -1
+            opacity: 0
+        &__customcheck 
+            user-select: none
+            cursor: pointer
+            content: ''
+            display: block
+            width: 15px
+            height: 15px
+            flex-shrink: 0
+            flex-grow: 0
+            border: 1px solid $purple
+            border-radius: 0.25em
+            background-repeat: no-repeat
+            background-position: center center
+            background-size: 50% 50%
+            &:checked
+                &::before
+                background-image: url('/src/images/Vector.svg')
+                background-color: black
+               
+.visible
+
+   visibility: visible
+   opacity: 1

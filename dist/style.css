@@ -11,6 +11,10 @@
   src: url(775d58aaebdeccabfc9d.woff);
   src: url(6dbd7bc7a22c7426b009.woff2);
 }
+input {
+  margin: 0;
+}
+
 .textfield {
   display: flex;
   flex-direction: column;
@@ -60,8 +64,8 @@
 .dropdown {
   display: flex;
   flex-direction: column;
-  width: 320px;
-  height: 67px;
+  width: 266px;
+  height: 44px;
 }
 .dropdown-header {
   display: flex;
@@ -98,18 +102,21 @@
 .ddr {
   display: flex;
   flex-direction: column;
-  width: 318px;
+  width: 264px;
+  height: 119px;
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
   visibility: hidden;
   opacity: 0;
   transition: 0.2s;
+  margin-top: 23px;
 }
 .ddr-item {
   display: flex;
   justify-content: space-between;
-  padding: 7px 7px 7px 15px;
+  align-items: center;
+  padding: 5px 7px 0px 15px;
 }
 .ddr-item__text {
   font-size: 12px;
@@ -192,4 +199,178 @@
 .border {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+}
+
+.dropdownp {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  height: 44px;
+}
+.dropdownp-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.dropdownp-header__text {
+  font-family: MainBold, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 15px;
+  font-size: 12px;
+  color: #1F2041;
+}
+.dropdownp-drop {
+  height: 44px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+  padding: 15px;
+  cursor: pointer;
+}
+.dropdownp-drop__icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+.dropdownp-drop__selected {
+  font-size: 14px;
+  color: #1F2041BF;
+  font-family: MainRegular, sans-serif;
+}
+
+.ddp {
+  display: flex;
+  flex-direction: column;
+  width: 318px;
+  height: 159px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.2s;
+  margin-top: 23px;
+}
+.ddp-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 7px 0px 15px;
+}
+.ddp-item__text {
+  font-size: 12px;
+  font-family: MainBold, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.ddp-item__score {
+  display: flex;
+  align-items: center;
+}
+.ddp-item__scoretxt {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 12px;
+  font-family: MainBold, sans-serif;
+  color: #1F2041;
+}
+.ddp-config {
+  display: flex;
+  justify-content: space-between;
+  padding: 7px 7px 13px 15px;
+  font-family: MainBold, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-top: 15px;
+  color: #BC9CFF;
+}
+.ddp-config__sub {
+  cursor: pointer;
+}
+.ddp-config__clear {
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.vis {
+  opacity: 1;
+  visibility: visible;
+}
+
+.opacity {
+  opacity: 1;
+}
+
+.border {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.checkbox {
+  width: 266px;
+  height: 44px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.checkbox-text {
+  font-family: MainBold, sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #1F2041;
+}
+.checkbox-icon {
+  cursor: pointer;
+}
+
+.chlist {
+  width: 266px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.2s;
+}
+.chlist-item {
+  display: flex;
+}
+.chlist-item__name {
+  font-family: MainRegular, sans-serif;
+  font-size: 14px;
+  color: #1F204180;
+  margin-left: 9.74px;
+  margin-bottom: 13px;
+}
+.chlist-item__check {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.chlist-item__customcheck {
+  user-select: none;
+  cursor: pointer;
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #BC9CFF;
+  border-radius: 0.25em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+.chlist-item__customcheck:checked {
+  background-image: url(8c7a576145177e5c19a6.svg);
+  background-color: black;
+}
+.visible {
+  visibility: visible;
+  opacity: 1;
 }

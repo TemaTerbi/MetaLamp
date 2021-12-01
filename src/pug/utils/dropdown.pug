@@ -1,4 +1,4 @@
-mixin dropdown(name='Dropdownn', selected='Сколько гостей')
+mixin dropdownroom(name='Dropdownn', selected='спальни, кровати...')
     .dropdown
         .dropdown-header 
             .dropdown-header__text=name
@@ -8,7 +8,22 @@ mixin dropdown(name='Dropdownn', selected='Сколько гостей')
                 .dropdown-drop__selected=selected
                 img(src="/src/images/expandmore.svg", alt="Drop")
     .list 
-        +ddr 
+        +ddrlist 
+    script 
+        include ../../js/dropdownfunction.js
+        include ../../js/open.js
+
+mixin dropdownpeople(name='Dropdownn', selected='Сколько гостей')
+    .dropdownp
+        .dropdownp-header 
+            .dropdownp-header__text=name
+        .dropdownp-drop(onclick="peopleopen()" id="borderpeople")
+            .dropdownp-drop__main=main 
+            .dropdownp-drop__icon
+                .dropdownp-drop__selected=selected
+                img(src="/src/images/expandmore.svg", alt="Drop")
+    .list 
+        +ddplist 
     script 
         include ../../js/dropdownfunction.js
         include ../../js/open.js
@@ -17,7 +32,7 @@ mixin dropdown(name='Dropdownn', selected='Сколько гостей')
 
 
 
-mixin ddr(item1='спальни', item2='кровати', item3='ванные комнаты', i=0, a=0)
+mixin ddrlist(item1='спальни', item2='кровати', item3='ванные комнаты', i=0)
     .ddr(id='dropmenu')
         .ddr-item 
             .ddr-item__text=item1
@@ -37,9 +52,31 @@ mixin ddr(item1='спальни', item2='кровати', item3='ванные к
                 +minus('-')
                 .ddr-item__scoretxt=i
                 +plus('+')
-        .ddr-config
-            .ddr-config__clear(id="clear" onclick="clear()") Очистить
-            .ddr-config__sub Применить
+
+mixin ddplist(item1='спальни', item2='кровати', item3='ванные комнаты', i=0)
+    .ddp(id='dropmenupeople')
+        .ddp-item 
+            .ddp-item__text=item1
+            .ddp-item__score 
+                +minus('-')
+                .ddp-item__scoretxt(id="test")=i
+                +plus('+')
+        .ddp-item 
+            .ddp-item__text=item2
+            .ddp-item__score 
+                +minus('-')(id="minus")
+                .ddp-item__scoretxt=i
+                +plus('+')
+        .ddp-item 
+            .ddp-item__text=item3
+            .ddp-item__score 
+                +minus('-')
+                .ddp-item__scoretxt=i
+                +plus('+')
+        .ddp-config
+            .ddp-config__clear(id="clear" onclick="clear()") Очистить
+            .ddp-config__sub Применить
+
 
                 
     

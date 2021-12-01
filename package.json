@@ -39,6 +39,7 @@
     "webpack-dev-server": "^4.6.0"
   },
   "dependencies": {
+    "sass-custom-box": "^0.2.0",
     "webpack-stringify-loader": "^1.0.0"
   }
 }

@@ -1,0 +1,44 @@
+mixin checkbox(name='expandable checkbox list')
+    .checkbox
+        .checkbox-text=name
+        .checkbox-icon(onclick="openn()")
+            img(src="/src/images/expandmore.svg", alt="Drop")
+    +checkboxlist
+    script 
+        include ../../js/checkbox.js
+
+
+mixin checkboxlist(item1='Завтрак', item2='Письменный стол', item3='Стул для кормления', item4='Кроватка', item5='Телевизор', item6='Шампунь', item7='Телевизор', item8='Шампунь')
+    .chlist(id="list")
+        .chlist-item
+            .chlist-item__customcheck
+            input(type="checkbox" class="chlist-item__check")
+            .chlist-item__name=item1
+        .chlist-item 
+            .chlist-item__customcheck
+            input(type="checkbox" class="chlist-item__check")
+            .chlist-item__name=item2
+        .chlist-item 
+            .chlist-item__customcheck
+            input(type="checkbox" class="chlist-item__check")
+            .chlist-item__name=item3
+        .chlist-item 
+            .chlist-item__customcheck
+            input(type="checkbox" class="chlist-item__check")
+            .chlist-item__name=item4
+        .chlist-item 
+            .chlist-item__customcheck
+            input(type="checkbox" class="chlist-item__check")
+            .chlist-item__name=item5
+        .chlist-item 
+            .chlist-item__customcheck
+            input(type="checkbox" class="chlist-item__check")
+            .chlist-item__name=item6
+        .chlist-item    
+            .chlist-item__customcheck
+            input(type="checkbox" class="chlist-item__check")
+            .chlist-item__name=item7
+        .chlist-item 
+            .chlist-item__customcheck
+            input(type="checkbox" class="chlist-item__check")
+            .chlist-item__name=item8

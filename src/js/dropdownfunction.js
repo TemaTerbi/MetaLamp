@@ -20,7 +20,7 @@ const dec = (e) => {
 }
 
 function clear() {
-    document.getElementById('test').innerText = 0;
+    i = 0
 }
 
 
