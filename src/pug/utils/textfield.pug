@@ -1,6 +1,8 @@
-mixin textfield (name='Text Field', placeholder='Email')
+mixin textfield (name='Text Field', placeholder='Email', visible='textfield-input__images vis')
     .textfield
         .textfield-header 
             .textfield-header__text=name
         .textfield-input 
                 input(placeholder=placeholder, class="textfield-input__input")
+                div(class=visible)
+                    img(src="/src/images/arrow_forward.svg", alt="Forward")
