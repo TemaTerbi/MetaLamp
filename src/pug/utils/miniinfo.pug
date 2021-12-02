@@ -1,0 +1,16 @@
+mixin miniinfo(name1='Комфорт', info1='Шумопоглощающие стены', name2='Удобство', info2='Окно в каждой из спален')
+    .info 
+        .info-item 
+            .info-item__icon 
+                img(src="/src/images/insert_emoticon.svg", alt="Smile")
+            .info-wrapper
+                .info-item__head=name1 
+                .info-item__dis=info1
+        .info-hr
+        .info-item 
+            .info-item__icon 
+                img(src="/src/images/location_city.svg", alt="City")
+            .info-wrapper2
+                .info-item__head=name2 
+                .info-item__dis=info2
+        .info-hr

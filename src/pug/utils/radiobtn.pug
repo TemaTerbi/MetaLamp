@@ -1,0 +1,10 @@
+mixin radiobtn(name='Radio Buttons', item1='Мужчина', item2='Женщина')
+    .radio
+        .radio-name=name
+        .radio-item
+            .radio-item__items
+                input(type="radio")
+                .radio-item__text=item1 
+            .radio-item__items
+                input(type="radio")
+                .radio-item__text=item2

@@ -1,3 +1,58 @@
-input
+input[type="checkbox"]
     margin: 0
+    appearance: none
+    -webkit-appearance: none
+    height: 20px
+    width: 20px
+    border: 1px solid rgba(31, 32, 65, 0.25)
+    margin-bottom: 10px
+    border-radius: 4px
+    display: flex
+    align-items: center
+    justify-content: center
+    cursor: pointer
 
+input[type="checkbox"]:after
+    content: "\f00c"
+    font-family: "Font Awesome 5 free"
+    font-weight: bold
+    font-weight: 900
+    font-size: 15px
+    color: $purple 
+    display: none
+
+input[type="checkbox"]:checked
+    border: 1px solid $purple
+
+input[type="checkbox"]:checked
+    &::after
+        display: block
+
+input[type="radio"]
+    margin: 0
+    appearance: none
+    -webkit-appearance: none
+    height: 20px
+    width: 20px
+    border: 1px solid rgba(31, 32, 65, 0.25)
+    border-radius: 10px
+    display: flex
+    align-items: center
+    justify-content: center
+    cursor: pointer
+
+input[type="radio"]:after
+    content: "\f111"
+    font-family: "Font Awesome 5 free"
+    font-weight: bold
+    font-weight: 900
+    font-size: 12px
+    color: $purple 
+    display: none
+
+input[type="radio"]:checked
+    border: 1px solid $purple
+
+input[type="radio"]:checked
+    &::after
+        display: block

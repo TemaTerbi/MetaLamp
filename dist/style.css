@@ -11,8 +11,69 @@
   src: url(775d58aaebdeccabfc9d.woff);
   src: url(6dbd7bc7a22c7426b009.woff2);
 }
-input {
+input[type=checkbox] {
   margin: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  margin-bottom: 10px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+input[type=checkbox]:after {
+  content: "\f00c";
+  font-family: "Font Awesome 5 free";
+  font-weight: bold;
+  font-weight: 900;
+  font-size: 15px;
+  color: #BC9CFF;
+  display: none;
+}
+
+input[type=checkbox]:checked {
+  border: 1px solid #BC9CFF;
+}
+
+input[type=checkbox]:checked::after {
+  display: block;
+}
+
+input[type=radio] {
+  margin: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+input[type=radio]:after {
+  content: "\f111";
+  font-family: "Font Awesome 5 free";
+  font-weight: bold;
+  font-weight: 900;
+  font-size: 12px;
+  color: #BC9CFF;
+  display: none;
+}
+
+input[type=radio]:checked {
+  border: 1px solid #BC9CFF;
+}
+
+input[type=radio]:checked::after {
+  display: block;
 }
 
 .textfield {
@@ -346,11 +407,6 @@ input {
   margin-left: 9.74px;
   margin-bottom: 13px;
 }
-.chlist-item__check {
-  position: absolute;
-  z-index: -1;
-  opacity: 0;
-}
 .chlist-item__customcheck {
   user-select: none;
   cursor: pointer;
@@ -373,4 +429,57 @@ input {
 .visible {
   visibility: visible;
   opacity: 1;
+}
+
+.radio-name {
+  font-family: MainBold, sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #1F2041;
+}
+.radio-item {
+  display: flex;
+  margin-top: 16px;
+}
+.radio-item__items {
+  display: flex;
+  font-family: MainRegular, sans-serif;
+  font-size: 14px;
+  color: #1F2041BF;
+  margin-right: 20px;
+  align-items: center;
+}
+.radio-item__text {
+  margin-left: 10px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  width: 291px;
+}
+.info-hr {
+  border: 1px solid rgba(31, 32, 65, 0.1);
+}
+.info-wrapper {
+  margin-left: 10px;
+}
+.info-wrapper2 {
+  margin-left: 15px;
+}
+.info-item {
+  display: flex;
+  color: #1F2041BF;
+  margin-bottom: 17px;
+  margin-top: 23px;
+}
+.info-item__head {
+  font-family: MainBold, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+}
+.info-item__dis {
+  font-family: MainRegular, sans-serif;
+  margin-top: 5px;
 }

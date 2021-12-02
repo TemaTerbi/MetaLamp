@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_
   \****************************/
 /***/ (() => {
 
-eval("function openn() {\n  document.getElementById('list').classList.toggle('visible');\n}\n\n//# sourceURL=webpack://metalamp/./src/js/checkbox.js?");
+eval("function openn() {\n  document.getElementById('list').classList.toggle('visible');\n}\n\nfunction opened() {\n  document.getElementById('listed').classList.toggle('visible');\n}\n\n//# sourceURL=webpack://metalamp/./src/js/checkbox.js?");
 
 /***/ }),
 
