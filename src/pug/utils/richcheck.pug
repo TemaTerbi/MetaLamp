@@ -1,0 +1,24 @@
+mixin richcheck(name='rich Checkbox Buttons', head1='Широкий коридор', text1='Ширина коридоров в номере не менее 91 см.', head2='Помощник для инвалидов', text2='На 1 этаже вас встретит специалист  и проводит до номера.')
+    .rich
+        .rich-head=name
+        .rich-item 
+            .rich-items
+                .rich-items__check
+                    input(type="checkbox")
+                .rich-wrapper
+                    .rich-items__head=head1
+                    .rich-items__text=text1
+            .rich-items
+                .rich-items__check
+                    input(type="checkbox")
+                .rich-wrapper
+                    .rich-items__head=head2
+                    .rich-items__text=text2
+
+
+
+
+
+
+
+

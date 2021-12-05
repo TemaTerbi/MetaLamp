@@ -583,3 +583,34 @@ input[type=radio]:checked::after {
 .likee {
   display: none;
 }
+
+.rich {
+  width: 266px;
+}
+.rich-wrapper {
+  margin-left: 10px;
+}
+.rich-head {
+  font-family: MainBold, sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #1F2041;
+  margin-bottom: 17px;
+}
+.rich-items {
+  display: flex;
+  margin-bottom: 11px;
+}
+.rich-items__head {
+  font-family: MainBold, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  color: #1F2041BF;
+  margin-bottom: 5px;
+}
+.rich-items__text {
+  font-family: MainRegular, sans-serif;
+  font-size: 12px;
+  color: #1F204180;
+}
