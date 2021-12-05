@@ -1,0 +1,48 @@
+.toggle 
+    &-head
+        font-family: MainBold, sans-serif
+        font-weight: bold
+        font-size: 12px
+        text-transform: uppercase
+        color: $darkShade100
+    &-item
+        margin-top: 16px
+        display: flex
+        align-items: center
+        width: 260px
+        &__text
+            margin-left: 10px
+            font-family: MainRegular, sans-serif
+            font-size: 14px
+            color: $darkShade75
+        &__switch
+            display: inline-block
+            width: 40px
+            height: 20px
+            border-radius: 10px
+            border: 1px solid rgba(31, 32, 65, 0.25)
+            background-color: #eee
+            position: relative
+            cursor: pointer
+            &::before
+            &::after
+                content: ""
+                position: absolute
+                width: 12px
+                height: 12px
+                top: 4px
+                left: 4px
+                background-color: rgba(31, 32, 65, 0.25)
+                border-radius: 50%
+                transition: left 0.3s ease, background-color 0.3s ease
+                    
+                                   
+.active
+        border: 1px solid $purple
+        &::after
+            left: 25px
+            transition: left 0.3s ease, background-color 0.3s ease
+            background-color: $purple
+
+
+

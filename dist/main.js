@@ -16,7 +16,7 @@
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_sum__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./js/sum */ \"./src/js/sum.js\");\n/* harmony import */ var _js_sum__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_js_sum__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _sass_style_sass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./sass/style.sass */ \"./src/sass/style.sass\");\n/* harmony import */ var _js_dropdownfunction__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/dropdownfunction */ \"./src/js/dropdownfunction.js\");\n/* harmony import */ var _js_dropdownfunction__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_js_dropdownfunction__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _js_open__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/open */ \"./src/js/open.js\");\n/* harmony import */ var _js_open__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_js_open__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _js_checkbox__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./js/checkbox */ \"./src/js/checkbox.js\");\n/* harmony import */ var _js_checkbox__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_js_checkbox__WEBPACK_IMPORTED_MODULE_4__);\n\n\n\n\n\n\nvar image = __webpack_require__(/*! ./images/expandmore.svg */ \"./src/images/expandmore.svg\");\n\n//# sourceURL=webpack://metalamp/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sass_style_sass__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sass/style.sass */ \"./src/sass/style.sass\");\n/* harmony import */ var _js_dropdownfunction__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/dropdownfunction */ \"./src/js/dropdownfunction.js\");\n/* harmony import */ var _js_dropdownfunction__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_js_dropdownfunction__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _js_open__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/open */ \"./src/js/open.js\");\n/* harmony import */ var _js_open__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_js_open__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _js_checkbox__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/checkbox */ \"./src/js/checkbox.js\");\n/* harmony import */ var _js_checkbox__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_js_checkbox__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _js_toggle__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./js/toggle */ \"./src/js/toggle.js\");\n/* harmony import */ var _js_toggle__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_js_toggle__WEBPACK_IMPORTED_MODULE_4__);\n\n\n\n\n\n\nvar image = __webpack_require__(/*! ./images/expandmore.svg */ \"./src/images/expandmore.svg\");\n\n//# sourceURL=webpack://metalamp/./src/index.js?");
 
 /***/ }),
 
@@ -50,13 +50,13 @@ eval("function drop() {\n  document.getElementById('dropmenu').classList.toggle(
 
 /***/ }),
 
-/***/ "./src/js/sum.js":
-/*!***********************!*\
-  !*** ./src/js/sum.js ***!
-  \***********************/
+/***/ "./src/js/toggle.js":
+/*!**************************!*\
+  !*** ./src/js/toggle.js ***!
+  \**************************/
 /***/ (() => {
 
-eval("var add = function add(a, b) {\n  return a + b;\n};\n\nconsole.log(add(5, 15));\n\n//# sourceURL=webpack://metalamp/./src/js/sum.js?");
+eval("function toggle() {\n  // const toggles = document.getElementById('toggle');\n  // toggles.forEach(toggle => {\n  //     toggle.addEvenListener('click', (e) => {\n  //         e.currentTarget.classList.toggle('active');\n  //     })\n  // })\n  document.getElementById('toggle').classList.toggle('active');\n}\n\n//# sourceURL=webpack://metalamp/./src/js/toggle.js?");
 
 /***/ }),
 

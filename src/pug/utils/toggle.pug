@@ -1,0 +1,9 @@
+mixin toggle(name='Toggle', toggle='Получать спецпредложения')
+    .toggle
+        .toggle-head=name
+        .toggle-main 
+            .toggle-item 
+                .toggle-item__switch.one(onclick="toggle()", id="toggle")
+                .toggle-item__text=toggle
+    script 
+        include ../../js/toggle.js

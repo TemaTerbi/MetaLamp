@@ -483,3 +483,53 @@ input[type=radio]:checked::after {
   font-family: MainRegular, sans-serif;
   margin-top: 5px;
 }
+
+.toggle-head {
+  font-family: MainBold, sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #1F2041;
+}
+.toggle-item {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  width: 260px;
+}
+.toggle-item__text {
+  margin-left: 10px;
+  font-family: MainRegular, sans-serif;
+  font-size: 14px;
+  color: #1F2041BF;
+}
+.toggle-item__switch {
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  border-radius: 10px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  background-color: #eee;
+  position: relative;
+  cursor: pointer;
+}
+.toggle-item__switch::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  top: 4px;
+  left: 4px;
+  background-color: rgba(31, 32, 65, 0.25);
+  border-radius: 50%;
+  transition: left 0.3s ease, background-color 0.3s ease;
+}
+
+.active {
+  border: 1px solid #BC9CFF;
+}
+.active::after {
+  left: 25px;
+  transition: left 0.3s ease, background-color 0.3s ease;
+  background-color: #BC9CFF;
+}
