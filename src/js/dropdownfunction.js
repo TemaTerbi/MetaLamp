@@ -19,9 +19,7 @@ const dec = (e) => {
     } 
 }
 
-function clear() {
-    i = 0
-}
+
 
 
 

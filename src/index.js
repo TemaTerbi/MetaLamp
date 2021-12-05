@@ -3,6 +3,7 @@ import './js/dropdownfunction'
 import './js/open'
 import './js/checkbox'
 import './js/toggle'
+import './js/like'
 
 
 

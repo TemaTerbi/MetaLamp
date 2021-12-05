@@ -533,3 +533,53 @@ input[type=radio]:checked::after {
   transition: left 0.3s ease, background-color 0.3s ease;
   background-color: #BC9CFF;
 }
+
+.like-head {
+  font-family: MainBold, sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #1F2041;
+}
+.like-like {
+  margin-top: 16px;
+}
+.like-like__icon {
+  font-size: 12px;
+}
+.like-like__text {
+  font-family: MainRegular, sans-serif;
+  font-size: 10px;
+  color: #1F204140;
+  margin-left: 5px;
+  transition: 0.5s;
+}
+.like-like__btn {
+  cursor: pointer;
+  width: 40px;
+  height: 20px;
+  display: flex;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+
+.active {
+  border: 1px solid #BC9CFF;
+  transition: 0.5s;
+}
+
+.activetext {
+  color: #BC9CFF;
+  transition: 0.5s;
+}
+
+.vis {
+  display: block;
+}
+
+.likee {
+  display: none;
+}
