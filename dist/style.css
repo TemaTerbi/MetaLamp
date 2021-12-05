@@ -614,3 +614,32 @@ input[type=radio]:checked::after {
   font-size: 12px;
   color: #1F204180;
 }
+
+.bullet {
+  width: 350px;
+}
+.bullet-head {
+  font-family: MainBold, sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #1F2041;
+  margin-bottom: 16px;
+}
+.bullet-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.bullet-item__point {
+  background-color: rgba(31, 32, 65, 0.25);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.bullet-item__text {
+  margin-left: 10px;
+  font-family: MainRegular, sans-serif;
+  font-size: 14px;
+  color: #1F2041BF;
+}

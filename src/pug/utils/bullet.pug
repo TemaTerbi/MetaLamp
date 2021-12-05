@@ -1,0 +1,13 @@
+mixin bullet(name='bullet list', item1='Нельзя с питомцами', item2='Без вечеринок и мероприятий', item3='Время прибытия — после 13:00, а выезд до 12:00')
+    .bullet 
+        .bullet-head=name
+        .bullet-list 
+            .bullet-item 
+                .bullet-item__point 
+                .bullet-item__text=item1
+            .bullet-item 
+                .bullet-item__point 
+                .bullet-item__text=item2
+            .bullet-item 
+                .bullet-item__point 
+                .bullet-item__text=item3
