@@ -70,17 +70,6 @@ eval("function toggle() {\n  // const toggles = document.getElementById('toggle'
 
 /***/ }),
 
-/***/ "./src/images/expandmore.svg":
-/*!***********************************!*\
-  !*** ./src/images/expandmore.svg ***!
-  \***********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"/images/img/Nrr2wUs.svg\");\n\n//# sourceURL=webpack://metalamp/./src/images/expandmore.svg?");
-
-/***/ }),
-
 /***/ "./src/sass/style.sass":
 /*!*****************************!*\
   !*** ./src/sass/style.sass ***!
@@ -89,6 +78,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://metalamp/./src/sass/style.sass?");
+
+/***/ }),
+
+/***/ "./src/images/expandmore.svg":
+/*!***********************************!*\
+  !*** ./src/images/expandmore.svg ***!
+  \***********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"f1d0b03ffb3ec3dc0ed8.svg\";\n\n//# sourceURL=webpack://metalamp/./src/images/expandmore.svg?");
 
 /***/ })
 

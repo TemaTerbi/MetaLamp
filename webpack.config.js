@@ -58,18 +58,18 @@ module.exports = {
         
       ]
     },
-    // {
-    //   test: /\.(png|svg|jpg|jpeg|gif)$/i,
-    //   type: 'asset/resource'
-    // },
     {
-      test:/\.(jpg|png|svg)$/,
-      loader: 'file-loader',
-      options:{
-        name: '/img/[sha512:hash:base64:7].[ext]',
-        outputPath :  '/images/',
-      }
+      test: /\.(png|svg|jpg|jpeg|gif)$/i,
+      type: 'asset/resource'
     },
+    // {
+    //   test:/\.(jpg|png|svg)$/,
+    //   loader: 'file-loader',
+    //   options:{
+    //     name: '/img/[name].[ext]',
+    //     outputPath :  '/images/',
+    //   }
+    // },
     {
       test: /\.html$/i,
       loader: 'html-loader'

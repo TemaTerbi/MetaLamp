@@ -1,0 +1,14 @@
+include /likebutton
+mixin comment(name='Мурад Сарафанов', text='Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.')
+    .comment 
+        .comment-head
+            .comment-head__img 
+                img(src="../../images/ava.png", alt="Avatar")
+            .comment-head__info 
+                .comment-head__name=name 
+                .comment-head__last 5 дней назад
+        .comment-text 
+            .comment-text__like 
+                +likebutton
+            .comment-text__com=text
+            

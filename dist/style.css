@@ -423,7 +423,7 @@ input[type=radio]:checked::after {
   background-size: 50% 50%;
 }
 .chlist-item__customcheck:checked {
-  background-image: url(8c7a576145177e5c19a6.svg);
+  background-image: url(2204d2a4486ae132b490.svg);
   background-color: black;
 }
 .visible {
@@ -639,6 +639,42 @@ input[type=radio]:checked::after {
 }
 .bullet-item__text {
   margin-left: 10px;
+  font-family: MainRegular, sans-serif;
+  font-size: 14px;
+  color: #1F2041BF;
+}
+
+.comment {
+  width: 711px;
+}
+.comment-head {
+  display: flex;
+}
+.comment-head__info {
+  margin-left: 10px;
+}
+.comment-head__name {
+  font-family: MainBold, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #1F2041BF;
+}
+.comment-head__last {
+  margin-top: 10px;
+  font-family: MainRegular, sans-serif;
+  font-size: 14px;
+  color: #1F2041BF;
+}
+.comment-text {
+  margin-top: 2px;
+  display: flex;
+  align-items: baseline;
+}
+.comment-text__like {
+  margin: 0;
+}
+.comment-text__com {
+  margin-left: 29px;
   font-family: MainRegular, sans-serif;
   font-size: 14px;
   color: #1F2041BF;
