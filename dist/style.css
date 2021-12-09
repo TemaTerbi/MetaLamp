@@ -679,3 +679,82 @@ input[type=radio]:checked::after {
   font-size: 14px;
   color: #1F2041BF;
 }
+
+.rate {
+  width: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttonVar1 {
+  font-size: 12px;
+  padding: 14px 21px 15px 19px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  width: 100px;
+  border-radius: 22px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  font-family: MainBold, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.buttonVar2 {
+  font-size: 12px;
+  padding: 14px 21px 15px 19px;
+  border: 2px solid;
+  border-color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  width: 100px;
+  border-radius: 22px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #BC9CFF;
+  font-family: MainBold, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.buttonVar3 {
+  font-size: 12px;
+  width: 100px;
+  cursor: pointer;
+  color: #BC9CFF;
+  font-family: MainBold, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.buttonVar4 {
+  font-size: 12px;
+  padding: 14px 21px 15px 19px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  width: 320px;
+  border-radius: 22px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  font-family: MainBold, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.buttonVar4-svg {
+  position: absolute;
+  fill: #FFFFFF;
+  margin-top: 3px;
+  margin-left: 310px;
+}
+
+.disabled {
+  opacity: 0.5;
+}
+
+.disabled2 {
+  color: #1F204180;
+}
